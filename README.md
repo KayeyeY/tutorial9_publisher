@@ -15,7 +15,9 @@ Publisher dan subscriber sama-sama mengakses alamat ```amqp://guest:guest@localh
 ### Sending and Processing Event
 <img src="image/image2.png">
 
+Saat message broker atau RabbitMQ aktif, dan program Publisher serta Subscriber dijalankan (melalui cargo run), maka Publisher akan mengirim data ke message broker, sementara Subscriber akan menerima data tersebut. Pada gambar di atas, terlihat bahwa Publisher mengirim satu kali data ke message broker, dan Subscriber berhasil menerimanya.
+### Sending and Processing Event
 
+<img src="image/image3.png">
 
-
-
+Berdasarkan gambar di atas, saya menjalankan Publisher beberapa kali secara berurutan sehingga message rates meningkat. Setelah itu, saya mencoba menjalankannya dua kali lagi dengan jeda waktu yang lebih lama. Dari percobaan tersebut, saya menyimpulkan bahwa message rates akan naik saat Publisher mengirimkan data ke message broker. Semakin tinggi message rates, berarti message broker sedang menerima banyak data dari Publisher.
