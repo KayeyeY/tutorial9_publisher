@@ -10,7 +10,10 @@ Publisher dan subscriber sama-sama mengakses alamat ```amqp://guest:guest@localh
 
 ## Message Broker dengan RabbitMQ
 ### Running RabbitMQ as message broker
-<img src="image/image.png">
+<img src="image/image1.png">
+
+### Sending and Processing Event
+<img src="image/image2.png">
 
 
 
